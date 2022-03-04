@@ -8,6 +8,7 @@ import {
   DogCoinV2,
   DogCoinV2__factory,
 } from "../typechain";
+import { contains } from "underscore";
 
 describe("DogCoin", function () {
   let accounts: Signer[];
@@ -20,8 +21,8 @@ describe("DogCoin", function () {
     const DogCoin = await ethers.getContractFactory("DogCoin");
 
     let dogCoin_V1 = await upgrades.deployProxy(DogCoin, { kind: "uups" });
-    console.log("Contract Address :  ", dogCoin_V1.address);
     contractAddress = dogCoin_V1.address;
+    console.log("Contract Address :  ", contractAddress);
     assert.equal(await dogCoin_V1.name(), "DogCoin");
 
     const DogCoin_V2 = await ethers.getContractFactory("DogCoinV2");
@@ -31,25 +32,30 @@ describe("DogCoin", function () {
   });
 
   it("#2 Sould test smartcontract storage varriables ", async function () {
-    let dogeCoinContract = DogCoinV2__factory.connect(
+    let dogCoinContract = DogCoinV2__factory.connect(
       contractAddress,
       accounts[0]
     );
 
     assert.isOk(
-      (await dogeCoinContract.test1()).eq(1),
-      "TEST1 STORAGE VARIABLE IS WRONG"
+      (await dogCoinContract.test1()).eq(1),
+      "WRONG TEST1 STORAGE VARIABLE"
     );
     assert.isOk(
-      (await dogeCoinContract.test2()).eq(2),
-      "TEST2 STORAGE VARIABLE IS WRONG"
+      (await dogCoinContract.test2()).eq(2),
+      "WRONG TEST2 STORAGE VARIABLE IS"
     );
 
-    await dogeCoinContract.updateTest3(3);
+    await dogCoinContract.updateTest3(3);
 
     assert.isOk(
-      (await dogeCoinContract.test3()).eq(3),
-      "TEST3 STORAGE VARIABLE IS WRONG"
+      (await dogCoinContract.test3()).eq(3),
+      "WRONG TEST3 STORAGE VARIABLE"
     );
+  });
+
+  it("#3 Airdrop Tokens for accounts  ", async function () {
+    let [admin, accountA, accountB, accountC] = accounts;
+    const contract = DogCoinV2__factory.connect(contractAddress, admin);
   });
 });
