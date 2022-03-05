@@ -3,14 +3,14 @@
   "proxies": [
     {
       "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
-      "txHash": "0xa7c0561e4ac14ad36cbf6ec5f060a4c3ce7d11ca0425721abf9c1ed9d9b416f4",
+      "txHash": "0x353d3e4470ef5c87e13d13256047cdecd60598216f2081bf1208293762f8b366",
       "kind": "uups"
     }
   ],
   "impls": {
-    "0fddc19092fedca7d9f89e984be00372c44aa998bdaec2fbcddd131c2a407286": {
+    "0f642d1cde79d5732d32c1ee929f9fb03ed8bc0c394e3bfb52c0f089c139d591": {
       "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-      "txHash": "0xc7aa28cf7e39557db2850740c036564b988179dfbe50b79082317fb680bc1690",
+      "txHash": "0x75d959eeb587a967d7b4dff148009d9c66c8e08691548dc0c1dffa5658a4d63f",
       "layout": {
         "storage": [
           {
@@ -86,9 +86,17 @@
             "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:394"
           },
           {
-            "label": "_owner",
+            "label": "__gap",
             "offset": 0,
             "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC20BurnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol:51"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
             "type": "t_address",
             "contract": "OwnableUpgradeable",
             "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
@@ -96,7 +104,7 @@
           {
             "label": "__gap",
             "offset": 0,
-            "slot": "102",
+            "slot": "152",
             "type": "t_array(t_uint256)49_storage",
             "contract": "OwnableUpgradeable",
             "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
@@ -104,7 +112,7 @@
           {
             "label": "__gap",
             "offset": 0,
-            "slot": "151",
+            "slot": "201",
             "type": "t_array(t_uint256)50_storage",
             "contract": "ERC1967UpgradeUpgradeable",
             "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
@@ -112,7 +120,7 @@
           {
             "label": "__gap",
             "offset": 0,
-            "slot": "201",
+            "slot": "251",
             "type": "t_array(t_uint256)50_storage",
             "contract": "UUPSUpgradeable",
             "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
@@ -120,18 +128,18 @@
           {
             "label": "test1",
             "offset": 0,
-            "slot": "251",
+            "slot": "301",
             "type": "t_uint256",
             "contract": "DogCoin",
-            "src": "contracts/DocgCoin.sol:10"
+            "src": "contracts/DocgCoin.sol:14"
           },
           {
             "label": "test2",
             "offset": 0,
-            "slot": "252",
+            "slot": "302",
             "type": "t_uint256",
             "contract": "DogCoin",
-            "src": "contracts/DocgCoin.sol:11"
+            "src": "contracts/DocgCoin.sol:15"
           }
         ],
         "types": {
@@ -165,9 +173,9 @@
         }
       }
     },
-    "9abbb86ec737e0bb0c400ca596368254a036f5a5ec66937e74ac2b6e8167ec1d": {
+    "c9f6fd6d31a5768da204da8fbd10e3622401ed8d03a640e7d84a1ce9fe92693b": {
       "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
-      "txHash": "0x17a64de31d7e1fad151ee9deae6af5f07a8d4ead3e468fac47ab364b1455c51b",
+      "txHash": "0x25352328d0358f62d0028b457b8cd9e364acdf5748c5644518847ba1c5a0e4fd",
       "layout": {
         "storage": [
           {
@@ -243,9 +251,17 @@
             "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:394"
           },
           {
-            "label": "_owner",
+            "label": "__gap",
             "offset": 0,
             "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC20BurnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol:51"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
             "type": "t_address",
             "contract": "OwnableUpgradeable",
             "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
@@ -253,7 +269,7 @@
           {
             "label": "__gap",
             "offset": 0,
-            "slot": "102",
+            "slot": "152",
             "type": "t_array(t_uint256)49_storage",
             "contract": "OwnableUpgradeable",
             "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
@@ -261,7 +277,7 @@
           {
             "label": "__gap",
             "offset": 0,
-            "slot": "151",
+            "slot": "201",
             "type": "t_array(t_uint256)50_storage",
             "contract": "ERC1967UpgradeUpgradeable",
             "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
@@ -269,7 +285,7 @@
           {
             "label": "__gap",
             "offset": 0,
-            "slot": "201",
+            "slot": "251",
             "type": "t_array(t_uint256)50_storage",
             "contract": "UUPSUpgradeable",
             "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
@@ -277,31 +293,42 @@
           {
             "label": "test1",
             "offset": 0,
-            "slot": "251",
+            "slot": "301",
             "type": "t_uint256",
             "contract": "DogCoin",
-            "src": "contracts/DocgCoin.sol:10"
+            "src": "contracts/DocgCoin.sol:14"
           },
           {
             "label": "test2",
             "offset": 0,
-            "slot": "252",
+            "slot": "302",
             "type": "t_uint256",
             "contract": "DogCoin",
-            "src": "contracts/DocgCoin.sol:11"
+            "src": "contracts/DocgCoin.sol:15"
           },
           {
             "label": "test3",
             "offset": 0,
-            "slot": "253",
+            "slot": "303",
             "type": "t_uint256",
             "contract": "DogCoinV2",
-            "src": "contracts/DocgCoin.sol:33"
+            "src": "contracts/DocgCoin.sol:41"
+          },
+          {
+            "label": "accounts",
+            "offset": 0,
+            "slot": "304",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "DogCoinV2",
+            "src": "contracts/DocgCoin.sol:42"
           }
         ],
         "types": {
           "t_address": {
             "label": "address"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
           },
           "t_array(t_uint256)45_storage": {
             "label": "uint256[45]"
